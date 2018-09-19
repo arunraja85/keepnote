@@ -1,0 +1,15 @@
+<p>
+  student works!</p>
+  <h2>{{student.id}}</h2>
+  <h2>{{student.name}}</h2>
+  <h2>{{student.email}}</h2>
+
+  <h2>{{hobby.name}}</h2>
+  {{2+2}}
+  <!--one way data binding-->
+<button class="{{btnCSSClass}}">{{buttonText}}</button>
+<!--property data binding .. event data binding is click -->
+<button [class]="btnCSSClass" [disabled]="isDisabled" (click)="sayHello()">{{buttonText}}</button>
+
+<input type="text" name="userName" [(ngModel)] = "userName">
+<p>{{userName}}</p>
